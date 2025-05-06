@@ -1,3 +1,7 @@
+# Agent run command
+# uv run agent
+
+
 # import the required openai modules to create Agent 
 from agents import Agent, Runner, AsyncOpenAI, set_default_openai_client, set_default_openai_api, set_tracing_disabled
 
