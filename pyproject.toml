@@ -1,0 +1,22 @@
+[project]
+name = "mechanical-engineering-researcher"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Umair Daud", email = "umairdaud01@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "asyncio>=3.4.3",
+    "dotenv>=0.9.9",
+    "openai-agents>=0.0.14",
+]
+
+[project.scripts]
+mechanical-engineering-researcher = "mechanical_engineering_researcher:main"
+agent = "mechanical_engineering_researcher.global_config:run_global"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
